@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <title>Home page</title>
+    <link rel="stylesheet" href="tasbeeh.css">
+    <title>Document</title>
 </head>
-
 <body>
     <div class="grid-contanier">
         <div class="item1 navbar">
@@ -43,44 +38,68 @@
                 <li><a href="index.html">Ramaz Timings</a></li>
             </ul>
         </div>
+  <!-- tasbeeh counter html start here -->
         <div class="item2 ">
-            <div class="slider">
-                <img name="slide" src="image1.jpeg" alt="Images.jpg">
-            </div>
-            <div class="Clock">Timibg is here</div>
-            <div class="newFeature">New Features</div>
+            <div class="Counter_head">
+            <h1 id="heading">Digital Tasbeeh Counter</h1>
+            <img src="tasbeeh.jfif" alt="Tasbeeh.jpg">
+        </div>
+        <br>
+        <!-- <hr> -->
+        <div class="tasbeeh">
+            <!-- inner-area -->
+                <div class="inner-area">
+                    <div class="input" id="input">0</div>
+                    <div class="increment-decrement">
+                        <button id="decrement">-</button>
+                        <button id="increment">+</button>
+                    </div>
+                       <button id="reset">RESET</button>
+                </div>
+                <!-- savearea -->
+                <div class="save">
+                    <h1>If you want to save this Counter and want to continue it later :</h1>
+                    <h1 style="margin-top: 10px;">Enter the name of the Counter:</h1>
+                    <input type="text" id="name">
+                    <br>
+                    <button id="save">SAVE</button>
+                </div>
+        </div>
+          <!-- saved-counters -->
+        <div class="saved">
+            <h1>Saved Counters:</h1>
+            <hr>
+            <input type="text" id="search" placeholder="search by name">
+            <button id="searchBTn">Search</button>
+            <table class="table">
+                <tr>
+                    <th>Serial #</th>
+                    <th>Name</th>
+                    <th>Total Count</th>
+                    <th>Option</th>
+                </tr>
+            </table>
+            <div id="showCount"></div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
         <div class="item3 header">
             <h1>Ramadan is a great blessing of Allah! <br>
                 Made it special❤️</h1>
-        </div>
-        <div class="item4 cheatBox">
-            <h1>Eloquent Features</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique fugit autem, inventore voluptatibus
-                libero reprehenderit vero omnis laboriosam. Minus inventore nihil laborum at impedit aliquid officiis
-                quibusdam illum nostrum repellendus.</p>
-            <ol style="list-style:disc;">
-                <li><a href="tasbeeh.html"><button>Tasbeeh Counter</button></a></li>
-                <li><a href="index.html"><button>Calculate your Qaza Namazyn</button></a></li>
-                <li><a href="index.html"><button>Cheat with Computer Mufti</button></a></li>
-                <li><a href="index.html"><button>Tips to avoid Sins</button></a></li>
-            </ol>
-        </div>
-        <div class="item5 dailyQuote">
-            <div class="img">
-                <img src="ramadanMubarak.jpg" alt="">
-                <h1>Ramadan Mubarak</h1>
-            </div>
-            <div class="dailyHadees">
-                <h2 id="hadith" style="font-weight:bold;">“There are three whose supplication is not rejected: The
-                    fasting person when he breaks his fast, the just leader, and the supplication of the oppressed
-                    person……"</h2>
-                <br>
-                <h3 id="reference">(Tirmidhi: 3598)</h3>
-                <br>
-                <button id="hadeesBtn">Next Hadees</button>
-            </div>
-
         </div>
         <div class="item6 contanierAbout">
             <div class="aboutUs">
@@ -133,11 +152,7 @@
             <h3>CopyRight &copy; 2022-2023</h3>
         </div>
     </div>
-
-
-    <script src="slider.js"></script>
-    <script src="hadees.js"></script>
     <script src="responsiveNavbar.js"></script>
+    <script src="tasbeeh.js"></script>
 </body>
-
 </html>
