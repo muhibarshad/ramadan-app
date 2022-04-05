@@ -1,3 +1,5 @@
+let button= new Audio();
+button.src="popup.mp3";
 showCounters();
 let reset=document.getElementById('reset');
 let increment=document.getElementById('increment');
@@ -129,5 +131,3 @@ search.addEventListener('input',()=>{
     }
 
 })
-let button= new Audio();
-button.src="popup.mp3";
